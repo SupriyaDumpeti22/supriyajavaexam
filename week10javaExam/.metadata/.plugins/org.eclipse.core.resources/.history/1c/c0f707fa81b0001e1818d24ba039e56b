@@ -1,0 +1,13 @@
+package com.examQuestions;
+
+import org.junit.jupiter.api.Test;
+
+public class EmployeeJunitTest {
+
+	EmployeeJunit junit=new EmployeeJunit();
+	@Test
+	public void employeeTest() {
+		boolean emp = junit.emp("Kamal");
+		
+	}
+}

@@ -1,0 +1,11 @@
+package com.examQuestions;
+
+public class EmployeeJunitTest {
+
+	EmployeeJunit junit=new EmployeeJunit();
+	
+	public void employeeTest() {
+		boolean emp = junit.emp("Kamal");
+		
+	}
+}

@@ -1,0 +1,12 @@
+package com.examQuestions;
+
+import java.util.List;
+
+public class CountOfMaleFemale1 {
+
+	public void count() {
+		List<Employee> records = EmployeeRecords.records();
+		records.stream().forEach(e->System.out.println(e));
+		
+	}
+}

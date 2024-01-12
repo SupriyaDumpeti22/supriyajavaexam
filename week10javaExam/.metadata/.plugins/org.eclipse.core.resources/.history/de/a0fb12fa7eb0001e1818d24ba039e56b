@@ -1,0 +1,21 @@
+package com.examQuestions;
+
+import java.util.List;
+import java.util.stream.Stream;
+
+//6. Write a program and check whether employee existing or not by passing employee name using JUNIT?
+
+
+public class EmployeeJunit {
+    
+	public void emp(String employeeName) {
+		
+		List<Employee> records = EmployeeRecords.records();
+		Stream<Employee> filter = records.stream().filter(e->e.getName()==employeeName);
+		System.out.println(filter);
+	}
+	public static void main(String[] args) {
+		EmployeeJunit junit=new EmployeeJunit();
+		junit.emp("Kamal");
+	}
+}

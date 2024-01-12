@@ -1,0 +1,8 @@
+package com.examQuestions;
+
+public class CountOfMaleFemale1 {
+
+	public void count() {
+		EmployeeRecords.records();
+	}
+}

@@ -1,0 +1,29 @@
+package com.examQuestions;
+
+import java.util.Scanner;
+import java.util.function.Consumer;
+import java.util.function.Supplier;
+
+//8. Write a Java program to print the following pattern?
+public class BoxPattern {
+
+	
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter a number to define row and column:");
+		int number = scanner.nextInt();
+		
+		Consumer<Integer> val=(num)->{
+			System.out.println("-------------");
+			for(int index1=0;index1<num;index1++)
+			{
+				for(int index2=0;index2<num;index2++)
+				{
+					System.out.print("*");
+				}
+				System.out.println();
+			}
+		};
+		val.accept(5);
+	}
+}

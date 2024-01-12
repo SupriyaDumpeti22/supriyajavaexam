@@ -1,0 +1,12 @@
+package com.examQuestions;
+
+import java.util.List;
+
+//4. Number of male and female employees are there in the sales and marketing department?
+public class CountFemaleInSalesMark {
+
+	public void countFemale() {
+		List<Employee> records = EmployeeRecords.records();
+		records.
+	}
+}
